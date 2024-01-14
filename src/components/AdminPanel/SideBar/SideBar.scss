@@ -1,0 +1,62 @@
+.link {
+  text-decoration: none;
+  display: inline-flex;
+  width: 100%;
+  padding: 8px 16px;
+  color: inherit;
+  transition: 0.4s ease-in-out;
+  &:hover {
+    background-color: rgba(228, 5, 18, 0.04);
+    transition: 0.4s ease-in-out;
+  }
+  &.active {
+    color: rgba(228, 5, 18, 0.8);
+  }
+}
+.sideBar {
+  width: 100%;
+  background: 	#F0F0F0;
+  &Wrapper {
+    width: 56px;
+    .MuiTypography-root {
+      display: none;
+      margin-left: 8px;
+    }
+    &.opened {
+      width: 220px;
+      min-width: 220px;    
+      .MuiTypography-root {
+        display: inline-block;
+      }
+    }
+  }
+  .MuiDrawer-paper {
+    padding-top: 12px;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: static;
+    background: none;
+    .MuiBox-root {
+      overflow: hidden;
+    }
+  }
+}
+.iconWrapper {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+}
+
+@media(max-width: 768px) {
+  .sideBarWrapper {
+    position: relative;
+    min-width: 56px;
+    .sideBar {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;  
+    }
+  }
+}

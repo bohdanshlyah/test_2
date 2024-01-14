@@ -1,0 +1,18 @@
+.profileContainer {
+    max-width: 1200px;
+    padding-block: 32px;
+}
+
+.profileStaticText {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+    padding: 16.5px 14px;
+    width: 100%;
+}
+
+.profileStatic_flexAlignCenter {
+    display: flex;
+    align-items: center;
+}

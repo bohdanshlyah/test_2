@@ -1,0 +1,59 @@
+.photoUpload {
+  color: #9E9E9E;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  max-width: 400px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+
+  &Content {
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  &Button{
+    margin-top: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  &Errors {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 80%;
+    text-align: center;
+    color: #ff0000;
+  }
+
+  input {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+  }
+
+  &Triggers {
+    display: flex;
+    flex-direction: column;
+    .underlined {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  &Trigger {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &Remove {
+    margin-left: -1px;
+  }
+}

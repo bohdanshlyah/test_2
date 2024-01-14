@@ -1,0 +1,9 @@
+.mainAdminWrapper {
+  display: flex;
+}
+@media(max-width: 768px) {
+  .mainAdminWrapper {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+  }
+} 
