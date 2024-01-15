@@ -10,7 +10,7 @@ const HeaderLogo = () => {
         style={{ textDecoration: 'none', color: 'inherit', fontWeight: 'bold' }}
         to={AppRouter.HOME}
       >
-        Front Shop
+        Front Shop - TEST
       </Link>
     </Typography>
   );
